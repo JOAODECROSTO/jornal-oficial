@@ -12,18 +12,28 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-        
+
         header {
             background-color: #0077cc;
             color: white;
             text-align: center;
             padding: 20px;
+            position: relative;
+            z-index: 10;
         }
-        
+
+        header img {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 60px; /* Ajuste o tamanho da logo */
+            height: auto;
+        }
+
         main {
             padding: 20px;
         }
-        
+
         article {
             background-color: white;
             padding: 15px;
@@ -33,35 +43,35 @@
             flex-direction: column;
             gap: 15px;
         }
-        
+
         article h2 {
             font-size: 1.1rem;
             margin: 0;
         }
-        
+
         article p {
             font-size: 0.95rem;
             color: #333;
             margin: 0;
         }
-        
+
         article a {
             text-decoration: none;
             color: #0077cc;
             font-weight: bold;
         }
-        
+
         article a:hover {
             text-decoration: underline;
         }
-        
+
         article img {
             width: 100%;
             height: auto;
             object-fit: cover;
             border-radius: 4px;
         }
-        
+
         footer {
             background-color: #0077cc;
             color: white;
@@ -69,8 +79,8 @@
             padding: 15px;
             margin-top: 30px;
         }
+
         /* Estilo do botão de voltar fixo no topo */
-        
         .btn-voltar {
             position: fixed;
             top: 10px;
@@ -84,34 +94,38 @@
             border-radius: 5px;
             z-index: 1000;
         }
-        
+
         .btn-voltar:hover {
             background-color: #005fa3;
         }
+
     </style>
 </head>
 
 <body>
 
     <header>
+        <img src="logo.png" alt="Logo do Jornal"> <!-- Coloque a imagem da logo aqui -->
         <h1>Jornal Online</h1>
     </header>
 
+    <!-- Botão de voltar -->
     <button onclick="window.history.back()" class="btn-voltar">
         Voltar
     </button>
 
     <main>
         <article>
-              <div class="carousel-item">
-                    <a href="noticia10.html"><img src="Nova pasta/11.jpeg" alt="Notícia 10"></a>
-                </div>
+            <!-- Imagem e link para a notícia -->
+            <div class="carousel-item">
+                <a href="noticia10.html"><img src="Nova pasta/11.jpeg" alt="Notícia 10"></a>
+            </div>
+            <!-- Imagem principal e conteúdo da notícia -->
             <img src="Nova pasta/11.jpeg" alt="Turbinas eólicas instaladas no mar próximo à costa">
             <p>O governo federal, em parceria com empresas privadas, inaugurou ontem o Parque Eólico Offshore de Ceará-Mar, localizado a cerca de 20 km da costa de Fortaleza. Com 50 turbinas submersas e capacidade instalada de 600 MW, a usina é a maior do
                 gênero na América Latina.</p>
-            <p>O investimento totalizou R$ 6 bilhões e gerou mais de 4 000 empregos diretos durante a fase de construção. Na operação, o parque manterá 300 vagas permanentes, incluindo técnicos de manutenção marítima e engenheiros especializados em energia
-                renovável.
-            </p>
+            <p>O investimento totalizou R$ 6 bilhões e gerou mais de 4.000 empregos diretos durante a fase de construção. Na operação, o parque manterá 300 vagas permanentes, incluindo técnicos de manutenção marítima e engenheiros especializados em energia
+                renovável.</p>
             <p>O projeto faz parte do programa federal de transição energética, que visa aumentar a participação das fontes limpas na matriz elétrica para 45% até 2030. A previsão é que o Ceará-Mar suprirá energia para mais de 1,5 milhão de residências.</p>
             <p>Ambientalistas destacam benefícios, como a redução de emissões de CO₂ em cerca de 1,2 milhão de toneladas por ano. Ao mesmo tempo, estudos foram realizados para minimizar o impacto da instalação nas rotas de migração de aves marinhas e na
                 fauna submarina.</p>
